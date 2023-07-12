@@ -1,12 +1,12 @@
 class Wolf {
-    constructor() {
-      this.strength = Math.floor(Math.random() * 100);
-    }
-  
-    howl() {
-      return 'Auuuuuuuuu';
-    }
+  constructor() {
+    this.strength = Math.floor(Math.random() * 100);
   }
-  
-  // TODO 2
-  export default Wolf;
+
+  howl() {
+    return "Auuuuuuuuu";
+  }
+}
+
+// TODO 2
+module.exports = Wolf;
