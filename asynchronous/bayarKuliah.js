@@ -16,7 +16,7 @@ function bayarKuliah(money) {
     setTimeout(() => {
       if (money < 900) {
         reject(new Error("Not enough money to pay!"));
-      } else {
+      } else if (money > 900) {
         resolve(`${money - 900} uang kembalian anda`);
       }
       resolve("payment successfull!");
@@ -43,4 +43,4 @@ function cetakStruk() {
     .catch((err) => console.log(err.message));
 }
 
-cetakStruk();
+module.exports = { withDrawMoney, bayarKuliah };
